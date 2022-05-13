@@ -37,6 +37,8 @@ public class UserDetailsController {
 	
 	
 //	http://localhost:8080/serviceA/getUserDetails
+	
+	// calling other service
 		
 	@GetMapping("/getUserDetails")
 	public List<UserDetails> getUserDetails(){
