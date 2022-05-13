@@ -20,25 +20,25 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest(classes = UserDetailsServiceApplication.class)
 public class UserDetailsServiceApplicationTest {
 	
-	@Autowired  
-	UserRepository userRepository; 
+// 	@Autowired  
+// 	UserRepository userRepository; 
 	
-	@Test
-	public void addUserTest() {
-		User user = new User();
-		user.setId(10);
-		user.setFirstName("TestUser");
-		user.setLastName("Testing");
-		user.setMobileNumber(9878786775L);
-		user.setPlace("Kerala");
-		userRepository.save(user);
-		assertNotNull(userRepository.findById(10).get());
-	}
+// 	@Test
+// 	public void addUserTest() {
+// 		User user = new User();
+// 		user.setId(10);
+// 		user.setFirstName("TestUser");
+// 		user.setLastName("Testing");
+// 		user.setMobileNumber(9878786775L);
+// 		user.setPlace("Kerala");
+// 		userRepository.save(user);
+// 		assertNotNull(userRepository.findById(10).get());
+// 	}
 	
-	@Test
-	public void getAllUserTest() {
-		List<User> user  = (List<User>) userRepository.findAll();
-		assertNotNull(user);
-	}
+// 	@Test
+// 	public void getAllUserTest() {
+// 		List<User> user  = (List<User>) userRepository.findAll();
+// 		assertNotNull(user);
+// 	}
 
 }
