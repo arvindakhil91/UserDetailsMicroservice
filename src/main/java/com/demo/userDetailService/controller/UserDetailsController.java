@@ -40,16 +40,7 @@ public class UserDetailsController {
 	
 	// calling other service
 		
-	@GetMapping("/getUserDetails")
-	public List<UserDetails> getUserDetails(){
-		
-		 return userService.getAllUser().stream()
-		 .map(i ->{
-			 Ratting ratting =  restTemplate.getForObject("http://USER-RATTING-SERVICE/serviceB/getAllUserRatting/"+i.getId(), Ratting.class);
-		 
-		 return  new UserDetails(i.getId(),i.getFirstName(),i.getLastName(),i.getMobileNumber(),i.getPlace(),ratting.getRatting(),ratting.getComment());
-				 }).collect(Collectors.toList());
-	}
+	
 	
 
 //	http://localhost:8080/userDetailService/getAllUser
