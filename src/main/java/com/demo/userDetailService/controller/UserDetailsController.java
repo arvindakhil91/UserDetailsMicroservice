@@ -73,5 +73,6 @@ public class UserDetailsController {
 	public String deleteUser(@PathVariable("id") int id) {
 		 return userService.deleteUser(id);
 	}
+	//testing
 
 }
