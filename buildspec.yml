@@ -11,5 +11,6 @@ phases:
 artifacts:
   files:
     - target/user-details.jar
+    - scripts/*
     - appspec.yml
   discard-paths: yes
